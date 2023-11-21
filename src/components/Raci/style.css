@@ -1,0 +1,45 @@
+.raci__background {
+    border-radius: 0px;
+    background-color: #fff;
+    border: 2px solid #3A3A3A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96px;
+    height: 96px;
+    margin-bottom: 8px;
+}
+
+.raci__option {
+    font-size: 24px;
+    font-weight: 800;
+    color: #3a3a3a;
+}
+
+.raci__option--picker {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 auto;
+    height: 100%;
+}
+
+.raci__option--button {
+    flex-basis: 50%;
+    border: 1px solid #3a3a3a;
+    background-color: transparent;
+    border-radius: 0;
+    box-sizing: border-box;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.raci__option--button:hover {
+    background-color: #219ebc;
+    color: #fff;
+    border: 1px solid transparent;
+    text-shadow: -1px -1px 0 #3A3A3A, 1px -1px 0 #3A3A3A, -1px 1px 0 #3A3A3A, 1px 1px 0 #3A3A3A;
+}
+
+.raci__option--selected {
+    background-color: #8ecae6;
+}

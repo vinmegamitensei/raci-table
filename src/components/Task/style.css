@@ -1,0 +1,28 @@
+.task__background {
+    border-radius: 8px 0px 0px 8px;
+    background-color: #219ebc;
+    border: 2px solid #3a3a3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 296px;
+    height: 100px;
+    margin-bottom: 8px;
+}
+
+.task__background:hover {
+    background-color: transparent;
+    border: 2px solid red;
+}
+
+.task__background:hover > div > h1 {
+    text-shadow: none;
+}
+
+.task__content {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: -1px -1px 0 #3A3A3A, 1px -1px 0 #3A3A3A, -1px 1px 0 #3A3A3A, 1px 1px 0 #3A3A3A;
+}

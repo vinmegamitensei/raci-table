@@ -1,0 +1,21 @@
+#root {
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.app__container {
+  margin-bottom: 8px;
+  gap: 8px;
+}
+
+.app__placeholder {
+  width: 296px;
+  height: 124px;
+  margin-bottom: 8px;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 8px;
+}

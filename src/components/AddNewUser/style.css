@@ -1,0 +1,27 @@
+.add-user__background {
+    border-radius: 8px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20px;
+    height: 124px;
+    margin-bottom: 8px;
+    border:2px solid #ffb703;
+    transition: all 0.25s ease-in-out;
+}
+
+.add-user__background:hover > h1 {   
+    text-shadow: -1px -1px 0 #535bf2, 1px -1px 0 #535bf2, -1px 1px 0 #535bf2, 1px 1px 0 #535bf2;
+    color: #535bf2;
+    transition: all 0.25s ease-in-out;
+}
+
+.add-user__label {
+    font-size: 32px;
+    font-weight: 500;
+    color: #ffb703;
+    text-shadow: -1px -1px 0 #ffb703, 1px -1px 0 #ffb703, -1px 1px 0 #ffb703, 1px 1px 0 #ffb703;
+    transition: all 0.25s ease-in-out;
+}

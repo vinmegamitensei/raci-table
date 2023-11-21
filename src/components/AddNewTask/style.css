@@ -1,0 +1,25 @@
+.new-task__background {
+    border-radius: 8px;
+    background-color: transparent;
+    border: 2px solid #219ebc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 296px;
+    height: 40px;
+}
+
+.new-task__background:hover > h1 {   
+    text-shadow: -1px -1px 0 #535bf2, 1px -1px 0 #535bf2, -1px 1px 0 #535bf2, 1px 1px 0 #535bf2;
+    color: #535bf2;
+    transition: all 0.25s ease-in-out;
+}
+
+.new-task__content {
+    font-size: 32px;
+    font-weight: 500;
+    color: #219ebc;
+    text-shadow: -1px -1px 0 #219ebc, 1px -1px 0 #219ebc, -1px 1px 0 #219ebc, 1px 1px 0 #219ebc;
+    transition: all 0.25s ease-in-out;
+}
