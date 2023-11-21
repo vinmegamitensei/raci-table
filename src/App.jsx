@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import { UserRow, TaskRow, TextModal } from "./components";
 import { useTableData } from "./hooks/useTableData/useTableData";
+import { useHotkeys } from "react-hotkeys-hook";
 
 function App() {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -13,6 +14,19 @@ function App() {
     taskHandlers,
     handleRaciOptionChange,
   ] = useTableData();
+
+  useHotkeys("alt+a", () => {
+    setModalOpen(true);
+    setCurrentModal("user");
+  });
+
+  useHotkeys("alt+s", () => {
+    setModalOpen(true);
+    setCurrentModal("task");
+  });
+
+  useHotkeys("escape", () => setModalOpen(false));
+
   const { removeUser, addNewUser } = userHandlers;
   const { removeTask, addNewTask } = taskHandlers;
 
@@ -44,6 +58,7 @@ function App() {
       </div>
       <TextModal
         isOpen={isModalOpen}
+        handleModal={setModalOpen}
         handleSubmit={(value) => {
           setModalOpen(false);
           if (currentModal === "user") {
